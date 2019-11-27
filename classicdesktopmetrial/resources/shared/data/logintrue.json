@@ -1,0 +1,8 @@
+{
+    "success": true,
+    "token": "abcdefghijklmnopqrstuvwxyz",
+    "data": {
+        "name": "Bob Smith",
+        "email": "bob@smith.com"
+    }
+}
