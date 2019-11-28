@@ -31,23 +31,25 @@ Ext.define('classicdesktoploginmetrial.view.login.LoginView',{
 			ui: 'auth',
 			items: [
 				 {
-				 	xtype: 'textfield',
+					 xtype: 'textfield',
 				 	allowBlank: false,
 				 	required: true,
-				 	label: 'User ID',
+					 label: 'User ID',
+					 inputAttrTpl: 'data-cy=username',
 				 	name: 'user',
 				 	reference: 'user',
-				 	placeholder: 'user id'
+					 placeholder: 'user id'
 				 }, 
 				 {
 					xtype: 'textfield',
+					inputAttrTpl: 'data-cy=password',
 					name: 'password',
 				 	allowBlank: false,
 				 	required: true,
 				 	label: 'Password',
 				 	name: 'pass',
 				 	reference: 'pass',
-				 	placeholder: 'password'
+					 placeholder: 'password'
 				 }, 
 				 {
 				 	xtype: 'checkbox',
