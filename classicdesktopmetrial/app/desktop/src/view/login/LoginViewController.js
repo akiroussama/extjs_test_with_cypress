@@ -12,6 +12,7 @@ Ext.define('classicdesktopmetrial.view.login.LoginViewController', {
 			.then(function(response) {
 				if (response.success == true) {
 					Ext.Msg.alert('Login Success', 'You have been logged in!')
+					document.cookie = "LoggedIn=true";
 					localStorage.setItem("LoggedIn", true)
 					me.getView().destroy()
 					Ext.create({xtype: 'mainview', plugins: 'viewport'})

@@ -105,6 +105,7 @@ Ext.define('classicdesktopmetrial.view.main.MainViewController', {
   onLogout: function(){
     var me = this;
     localStorage.setItem("LoggedIn", true)
+    document.cookie = "LoggedIn=true";
     me.getView().destroy()
     Ext.create({xtype: 'loginview', plugins: 'viewport'})
   },
