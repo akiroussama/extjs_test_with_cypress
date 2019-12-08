@@ -1,7 +1,7 @@
 Ext.define('classicdesktoploginmetrial.view.login.LoginView',{
 	extend: 'Ext.Container',
 	xtype: 'loginview',
-	cls: 'loginview',
+	cls: 'auth-login',
 	controller: 'loginviewcontroller',
 	viewModel: {
 		type: 'loginviewmodel'
